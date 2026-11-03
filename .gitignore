@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Datasets
+data/
+large_dataset_2gb/
+*.csv
+*.parquet
+*.jsonl
+
+# Generated models and outputs
+models/
+outputs/
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.h5
+*.keras
+*.ckpt
+*.safetensors
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# macOS and editors
+.DS_Store
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
