@@ -98,7 +98,7 @@ Generated datasets, model artifacts, outputs, backups, and local environment fil
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/sammitborekar20-cmyk/Supply-Chain-Risk-Analytics.git
 cd supply_chain_risk_analytics
 ```
 
