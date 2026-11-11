@@ -28,8 +28,8 @@ from sklearn.metrics import (
 
 BASE_DIR = Path(__file__).resolve().parent
 
-DATA_DIR = BASE_DIR / "data" / "large_dataset_2gb"
-OUTPUT_DIR = BASE_DIR / "outputs" / "large_dataset"
+DATA_DIR = BASE_DIR / "large_dataset_2gb"
+OUTPUT_DIR = BASE_DIR / "outputs" / "large_dataset_test"
 MODEL_DIR = BASE_DIR / "models"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -51,7 +51,7 @@ print("=" * 65)
 spark = (
     SparkSession.builder
     .appName("SupplyChainRiskAnalytics")
-    .master("local[*]")
+    .master("local[2]")
     .config("spark.sql.shuffle.partitions", "8")
     .getOrCreate()
 )

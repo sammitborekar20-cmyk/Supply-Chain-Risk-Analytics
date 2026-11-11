@@ -50,3 +50,15 @@ outputs/
 build/
 dist/
 *.egg-info/
+
+# Additional large datasets and backups
+large_dataset_v2/
+backups/
+
+# Spark generated files
+*.parquet
+spark-warehouse/
+metastore_db/
+.derby/
+derby.log
+.sparkStaging/
